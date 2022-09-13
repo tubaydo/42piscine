@@ -5,28 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: taydogan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/10 16:50:55 by taydogan          #+#    #+#             */
-/*   Updated: 2022/09/10 17:37:25 by taydogan         ###   ########.fr       */
+/*   Created: 2022/09/13 18:00:14 by taydogan          #+#    #+#             */
+/*   Updated: 2022/09/13 18:00:22 by taydogan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_power(int nb, int power)
 {
-	int	i;
+	int	result;
 
-	i = nb;
-	if (power > 1)
+	result = nb;
+	while (power > 1)
 	{
-		i *= nb;
+		result *= nb;
 		power--;
 	}
 	if (power == 0)
-	{
 		return (1);
-	}
 	if (power < 0)
-	{
 		return (0);
-	}
-	return (i);
+	return (result);
 }

@@ -5,27 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: taydogan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/10 16:51:35 by taydogan          #+#    #+#             */
-/*   Updated: 2022/09/10 17:38:25 by taydogan         ###   ########.fr       */
+/*   Created: 2022/09/13 18:00:51 by taydogan          #+#    #+#             */
+/*   Updated: 2022/09/13 18:01:09 by taydogan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_power(int nb, int power)
+iint	ft_recursive_power(int nb, int power)
 {
-	int	i;
+	int	result;
 
-	i = 1;
+	result = nb;
 	if (power > 1)
-	{
-		i *= nb * ft_recursive_power(nb, power - 1);
-	}
-	if (power < 0)
-	{
-		return (0);
-	}
+		return (nb * ft_recursive_power(nb, (power - 1)));
 	if (power == 0)
-	{
 		return (1);
-	}
-	return (i);
+	if (power < 0)
+		return (0);
+	return (result);
 }

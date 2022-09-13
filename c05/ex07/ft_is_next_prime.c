@@ -1,40 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_is_next_prime.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: taydogan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/13 18:22:45 by taydogan          #+#    #+#             */
-/*   Updated: 2022/09/13 18:22:57 by taydogan         ###   ########.fr       */
+/*   Created: 2022/09/13 18:24:08 by taydogan          #+#    #+#             */
+/*   Updated: 2022/09/13 18:24:25 by taydogan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int	ft_is_prime(int nb)
 {
-	long	index;
-	long	b;
+	int	i;
 
-	b = nb;
-	if (b <= 0)
-	{
+	i = 2;
+	if (nb < 2)
 		return (0);
-	}
-	if (b == 1)
+	while (i <= nb / i)
 	{
-		return (1);
+		if (nb % i == 0)
+			return (0);
+		i++;
 	}
-	index = 2;
-	if (b >= 2)
+	return (1);
+}
+
+int	ft_find_next_prime(int nb)
+{
+	if (nb < 2)
+		return (2);
+	while (nb >= 2)
 	{
-		while (index * index <= b)
-		{
-			if (index * index == b)
-			{
-				return (index);
-			}
-			index++;
-		}
+		if (ft_is_prime(nb) == 1)
+			return (nb);
+		nb++;
 	}
 	return (0);
 }
