@@ -2,4 +2,5 @@
 - 👀 📸 I'm interested in photograpy..
 - 💻 I’m currently learning c/algorithms...
 - I’m looking to collaborate on software development ...
-- 📫 How to reach me insta : **@tuba_aydogan**
+- 📫 How to reach me linkedin : **https://www.linkedin.com/in/tuba-aydo%C4%9Fan-6a7bb5205**
+ 
