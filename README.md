@@ -1,5 +1,5 @@
 ## GitHub Statistics
-
+<h3 align="center"> I am a learner of Ecole 42</h3>
 <a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cldspnjwo00870fjmgy1dmu6c/stats?cursusId=21&coalitionId=228" alt="taydogan's 42 stats" height=250 width="1000"/></a>
 
 <!-- TABLE -->
@@ -13,7 +13,7 @@
 <!-- activity graph -->
 <p align="center">
   <a href="https://skillicons.dev">
-    <img alt="Hanumat Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=Omskka&theme=tokyo-night&hide_border=true" />
+    <img alt="Hanumat Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=tubaydo&theme=tokyo-night&hide_border=true" />
   </a>
 </p>
 
